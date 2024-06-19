@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Result</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Crop Recommendation Result</h1>
+        <p>{{ result }}</p>
+        <div class="button-container">
+            <button class="btn btn-primary" onclick="window.history.back();">Prev</button>
+            <button class="btn btn-primary" onclick="goToConclusionPage();">Next</button>
+        </div>
+    </div>
+    <script>
+        function goToConclusionPage() {
+            window.location.href = '/conclusion';  // Replace '/conclusion' with the URL of your conclusion page
+        }
+    </script>
+</body>
+</html>

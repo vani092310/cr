@@ -1,0 +1,84 @@
+/* ho.css */
+
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 10%;
+    padding: 0;
+    background-image: url('/static/images/plant.jpg');
+    background-size: cover;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    height: 100vh; /* Ensures full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: right;
+}
+
+/* Header and menu styles */
+.menu {
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+    padding: 20px; /* You can use shorthand for padding */
+    border-radius: 5px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding and border are included in width calculation */
+}
+
+
+.menu .logo {
+    margin: 0;
+    font-size: 36px;
+    color: #333;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.menu ul li.active a {
+    color: #4CAF50; /* Active menu item color */
+}
+
+/* Hero section styles */
+.hero {
+    text-align: center;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #333;
+    margin-top: 340px;
+}
+
+.crop-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+
+
+}
+
+.crop-button:hover {
+    background-color: #45a049;
+}

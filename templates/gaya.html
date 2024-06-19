@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/gaya.css') }}">
+</head>
+<body>
+    <div class="header">
+        <img src="{{ url_for('static', filename='images/logo2.jpg') }}" alt="Left Logo" class="logo-left">
+        <div class="header-text">
+            <h2>GAYATRI VIDYA PARISHAD<br>COLLEGE FOR DEGREE AND PG COURSES(A)</h2>
+            <p>(Affiliated to Andhra University|Accredited by NAAC|Vishakapatnam-530045)</p>
+    </div>
+    </div>
+    <div class="project-heading">
+        CROP RECOMMENDATION SYSTEM
+    </div>
+    <div class="container-wrapper">
+        <div class="left-text">
+            <p>PROJECT by<br>Vani.K<br>Reg.no:PG222306014<br>MSc(CS) 4th Semester</p>
+        </div>
+        <div class="container">
+            <button onclick="location.href='{{ url_for('login') }}'">Proceed</button>
+            <button onclick="location.href='{{ url_for('abstract')}}'">Abstract</button>
+            <button onclick="closeWindow()">Close</button>
+        </div>
+        <div class="right-text">
+            <p>PROJECT GUIDE<br>B.Divakar<br>Assistant Professor</p>
+        </div>
+    </div>
+    <script>
+        function closeWindow() {
+            window.close();
+        }
+    </script>
+</body>
+</html>

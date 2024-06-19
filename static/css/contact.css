@@ -1,0 +1,71 @@
+/* contact.css */
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+h1, .btn-success {
+  color: #fff;
+  background-color: #006400;
+  border-color: #006400;
+}
+
+.btn-success:hover {
+  background-color: #005000;
+  border-color: #005000;
+}
+
+/* Container styles */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Centered text */
+.text-center {
+  text-align: center;
+}
+
+/* Lead paragraph */
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/* Margin-top */
+.mt-4 {
+  margin-top: 1.5rem;
+}
+
+.mt-5 {
+  margin-top: 3rem;
+}
+
+/* Form styles */
+.form-group label {
+  font-weight: bold;
+}
+
+.form-control {
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+
+/* Button styles */
+.btn-block {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  margin-top: 1rem;
+}

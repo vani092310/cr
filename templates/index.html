@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Prediction</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Crop Recommendation</h1>
+        <form method="POST" action="/recommend">
+            <div class="form-group">
+                <label for="Nitrogen">Nitrogen (N):</label>
+                <input type="text" class="form-control" id="Nitrogen" name="Nitrogen" required>
+            </div>
+            <div class="form-group">
+                <label for="Phosporus">Phosporus (P):</label>
+                <input type="text" class="form-control" id="Phosporus" name="Phosporus" required>
+            </div>
+            <div class="form-group">
+                <label for="Potassium">Potassium (K):</label>
+                <input type="text" class="form-control" id="Potassium" name="Potassium" required>
+            </div>
+            <div class="form-group">
+                <label for="Temperature">Temperature (°C):</label>
+                <input type="text" class="form-control" id="Temperature" name="Temperature" required>
+            </div>
+            <div class="form-group">
+                <label for="Humidity">Humidity (%):</label>
+                <input type="text" class="form-control" id="Humidity" name="Humidity" required>
+            </div>
+            <div class="form-group">
+                <label for="pH">pH:</label>
+                <input type="text" class="form-control" id="pH" name="pH" required>
+            </div>
+            <div class="form-group">
+                <label for="Rainfall">Rainfall (mm):</label>
+                <input type="text" class="form-control" id="Rainfall" name="Rainfall" required>
+            </div>
+            <input type="submit" value="Recommend" class="btn btn-primary">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+/* Reset some default browser styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Ensures horizontal scrolling is disabled */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('/static/images/one.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #000;
+    height: 100vh; /* Ensures the body covers the entire viewport height */
+}
+
+.container {
+    width: 50%; /* Adjust width for the form container */
+    margin: 35px auto;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    background-color: begie; /* Semi-transparent background for visibility */
+    color: #000;
+    position: relative; /* Keep position relative for centering */
+    z-index: 1; /* Ensure the form container is above the background image */
+}
+
+h1 {
+    text-align: center;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #000;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #000;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}

@@ -1,0 +1,64 @@
+/* about.css */
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll; /* Ensures scrollbar is always visible */
+}
+
+h1, h2, h3 {
+  color: #006400;
+}
+
+a {
+  color: #006400;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Container styles */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Centered text */
+.text-center {
+  text-align: center;
+}
+
+/* Lead paragraph */
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/* Margin-top */
+.mt-4 {
+  margin-top: 1.5rem;
+}
+
+.mt-5 {
+  margin-top: 3rem;
+}
+
+/* Column styles */
+.col-12 {
+  margin-bottom: 1.5rem;
+}
+
+/* Additional padding for larger screens */
+@media (min-width: 768px) {
+  .container {
+    padding: 40px;
+  }
+}
